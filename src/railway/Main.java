@@ -7,7 +7,7 @@ public class Main {
 	private static ArrayList<Train> trainList = new ArrayList<Train>();
 
 		public static void startSystem() {
-		System.out.println("=== Railway Reservation System Started ===\n");
+		System.out.println(" Railway Reservation System Started \n");
 
 		Train t1 = new Train("TR001", "Rajdhani Express",
 				"Chennai", "Mumbai", "06:00", "20:00", 5);
@@ -16,7 +16,7 @@ public class Main {
 
 	public static void handleBookings() {
 
-		System.out.println("--- Registration & Login ---");
+		System.out.println(" Registration & Login ");
 
 		Passenger passenger = new Passenger("P001", "Arjun Kumar",
 				"9876543210", "pass123");
@@ -28,7 +28,7 @@ public class Main {
 			return;
 		}
 
-		System.out.println("\n--- Search & Book ---");
+		System.out.println("\n Search & Book ");
 
 
 		passenger.searchTrain("Chennai", "Mumbai", trainList);
@@ -42,7 +42,7 @@ public class Main {
 
 	public static void handleCancellations(Passenger passenger, String ticketID) {
 
-		System.out.println("\n--- Cancellation ---");
+		System.out.println("\n Cancellation");
 
 		passenger.cancelTrain(ticketID);
 	}
@@ -51,7 +51,7 @@ public class Main {
 
 		startSystem();
 
-		System.out.println("--- Admin: Add Train ---");
+		System.out.println(" Admin: Add Train ");
 
 		Admin admin = new Admin("A001", "Meena Sharma",
 				"admin@railway.com", "adminpass");
@@ -69,7 +69,7 @@ public class Main {
 
 		handleBookings();
 
-		System.out.println("\n--- Cancellation Demo ---");
+		System.out.println("\n Cancellation Demo ");
 
 		Passenger p2 = new Passenger("P002", "Riya Thomas",
 				"9123456780", "riya2024");
@@ -84,7 +84,7 @@ public class Main {
 			handleCancellations(p2, ticketToCancel);
 		}
 
-		System.out.println("\n=== Railway Reservation System Ended ===");
+		System.out.println("\n Railway Reservation System Ended ");
 	}
 
 }
