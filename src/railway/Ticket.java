@@ -33,7 +33,7 @@ public class Ticket {
 	}
 
 	public void displayTicket() {
-		System.out.println("---------- TICKET ----------");
+		System.out.println(" TICKET ");
 		System.out.println("Ticket ID    : " + ticketID);
 		System.out.println("Passenger ID : " + passengerID);
 		System.out.println("Train ID     : " + trainID);
@@ -41,7 +41,6 @@ public class Ticket {
 		System.out.println("Journey ID   : " + journeyID);
 		System.out.println("Fare         : Rs." + fare);
 		System.out.println("Status       : " + bookingStatus);
-		System.out.println("----------------------------");
 	}
 
 	public void cancelTicket(String ticketID) {
